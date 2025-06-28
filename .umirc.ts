@@ -235,6 +235,37 @@ export default defineConfig({
         },
       ],
     },
+    {
+      name: '批量处理',
+      path: '/batch',
+      routes: [
+        {
+          name: '批量导入开题申请',
+          path: '/batch/B1',
+          component: './Batch/B1',
+        },
+        {
+          name: '批量导入开题报告',
+          path: '/batch/B2',
+          component: './Batch/B2',
+        },
+        {
+          name: '批量导入论文初稿',
+          path: '/batch/B3',
+          component: './Batch/B3',
+        },
+        {
+          name: '批量导入中期检查',
+          path: '/batch/B4',
+          component: './Batch/B4',
+        },
+        {
+          name: '批量导入论文终稿',
+          path: '/batch/B5',
+          component: './Batch/B5',
+        },
+      ],
+    },
   ],
   npmClient: 'npm',
 });
